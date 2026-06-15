@@ -1,48 +1,3 @@
-/* ===== Navbar ===== */
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin: 1rem;
-    padding: 0.5rem 1.5rem;
-    border-radius: 9999px;
-    background-color: #b9a6a0;
-    border: 2px solid #5aa0e6;
-}
-
-.navbar-brand {
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 0.4rem 1.2rem;
-}
-
-.navbar-links {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar-links a {
-    display: inline-block;
-    padding: 0.5rem 1.5rem;
-    border-radius: 9999px;
-    background-color: #c2b1ab;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: background-color 0.2s ease;
-}
-
-.navbar-links a:hover {
-    background-color: #a8938c;
-}
-
-/* ===== Hero ===== */
 .hero {
     min-height: 60vh;
     display: flex;
@@ -59,7 +14,13 @@
 
 .hero-content h1 {
     font-size: 3rem;
-    color: #4b8175;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+    font-size: 1.4rem;
+    color: var(--cor-texto);
     margin-bottom: 1rem;
 }
 
@@ -69,86 +30,41 @@
     line-height: 1.7;
 }
 
-/* ===== Seção Dor / Solução ===== */
-.dor-solucao {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem 4rem;
-}
-
-.bloco-titulo {
-    font-size: 2.75rem;
-    font-weight: 400;
-    color: #1f1f1f;
-    margin: 0 0 1.5rem;
-}
-
-.titulo-dor {
-    text-align: left;
-}
-
-.titulo-solucao {
-    text-align: right;
-}
-
-.divisor {
-    border: none;
-    border-top: 4px solid #1f1f1f;
-    margin: 2.5rem 0;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-}
-
-.card {
-    background-color: #d9d9d9;
-    border-radius: 10px;
-    padding: 1.25rem;
-    color: #333333;
-    line-height: 1.6;
-    min-height: 120px;
-}
 
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        border-radius: 1.5rem;
+    .hero {
+        min-height: 50vh;
+        padding: 2rem 1.5rem;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
+    .hero-content h1 {
+        font-size: 2.25rem;
     }
 
-    .titulo-solucao {
-        text-align: left;
+    .hero-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.05rem;
     }
 }
 
-/* css Footer */
+@media (max-width: 480px) {
+    .hero {
+        min-height: 40vh;
+        padding: 1.5rem 1rem;
+    }
 
+    .hero-content h1 {
+        font-size: 1.85rem;
+    }
 
-.footer {
-    background-color: #b9a6a0;
+    .hero-content h2 {
+        font-size: 1rem;
+    }
 
-    color: #ffffff;
-
-    text-align: center;
-
-    padding: 40px 20px;
-
-    border-radius: 45px;
+    .hero-content p {
+        font-size: 0.95rem;
+    }
 }
-
-.footer h3 {
-    color: #ffffff;
-
-    margin-bottom: 10px;
-}
-
-.footer p {
-    margin: 8px 0;
-}
-

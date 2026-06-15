@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--cor-navbar);
+    color: var(--cor-branco);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 45px;
+}
+
+.footer h3 {
+    color: var(--cor-branco);
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+/* Para Tablet*/
+@media (max-width: 768px) {
+    .footer {
+        border-radius: 24px;
+        padding: 30px 20px;
+    }
+}
+
+/* Para Mobile*/
+@media (max-width: 480px) {
+    .footer {
+        border-radius: 16px;
+        padding: 24px 16px;
+        font-size: 0.9rem;
+    }
+}

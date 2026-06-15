@@ -17,13 +17,18 @@
     <link rel="stylesheet" href="style.css" />
 
     <!--CSS De cada página/componente-->
+    <link rel="stylesheet" href="css/Navbar.css" />
     <link rel="stylesheet" href="css/Home.css" />
+    <link rel="stylesheet" href="css/Hero.css" />
+    <link rel="stylesheet" href="css/Footer.css" />
 
 
 
     <!-- Aqui fica a parte dos componentes, tem que ser em ordem que vai aparecer:
     Navbar, Home e assim por diante -->
+    <script type="text/babel" src="components/Navbar.jsx"></script>
     <script type="text/babel" src="components/Home.jsx"></script>
+    <script type="text/babel" src="components/Hero.jsx"></script>
     <script type="text/babel" src="components/Footer.jsx"></script>
 </head>
 
@@ -33,7 +38,9 @@
             function App() {
                 return (
                     <>
+                        <Navbar />
                         <Home />
+                        <Hero />
                         <Footer />
                         
                     </>
