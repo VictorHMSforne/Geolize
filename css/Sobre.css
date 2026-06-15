@@ -1,0 +1,59 @@
+.sobre {
+    padding: 80px 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f8f7f4;
+}
+
+.sobre-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sobre-numero {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.sobre-titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4rem;
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.sobre-destaque {
+    background-color: #C7F72F;
+    padding: 0 8px;
+    display: inline-block;
+}
+
+.sobre-texto {
+    max-width: 750px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #333;
+}
+
+.sobre-texto p {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        padding: 60px 20px;
+    }
+
+    .sobre-titulo {
+        font-size: 2.8rem;
+    }
+
+    .sobre-texto {
+        font-size: 1rem;
+    }
+}
