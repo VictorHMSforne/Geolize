@@ -1,0 +1,124 @@
+========================================================================
+                  DOCUMENTO DE REQUISITOS - PROJETO GEOLIZE
+========================================================================
+
+Projeto : Geolize
+Contexto: Atividade da faculdade - Disciplina de Front-End e
+          Mentalidade Criativa e Empreendedora.
+Descricao: Sistema de gestao de estacionamentos atraves de cameras
+           inteligentes com visao computacional e IA para monitoramento
+           de estacionamentos e vagas em tempo real. Permite o mapeamento
+           de vagas e seguranca: o sistema reconhece colisoes, furtos e
+           roubos e notifica a equipe instantaneamente ao identificar uma
+           atividade suspeita.
+
+------------------------------------------------------------------------
+1. RECURSOS / TECNOLOGIAS DE DESENVOLVIMENTO
+------------------------------------------------------------------------
+- React (via CDN + Babel Standalone)
+    > Construcao da interface por meio de componentes reutilizaveis.
+    > Renderizacao dinamica de listas (equipe, cards) com .map().
+    > Carregado pelo navegador, sem etapa de build/bundler.
+
+- HTML
+    > Estrutura e marcacao semantica das paginas (index.html).
+    > Ponto de entrada que carrega as fontes, os CSS e os componentes
+      na ordem em que aparecem na tela.
+
+- CSS
+    > Estilizacao visual da aplicacao.
+    > Variaveis globais de tema definidas em style.css (:root).
+    > Um arquivo CSS por componente/pagina (css/Navbar.css, css/Home.css,
+      css/Hero.css, css/Sobre.css, css/Equipe.css, css/Footer.css).
+    > Layout responsivo com media queries.
+
+- Fontes externas (Google Fonts)
+    > Space Grotesk (texto), Bebas Neue (titulos) e DM Mono (detalhes).
+
+------------------------------------------------------------------------
+2. LAYOUT
+------------------------------------------------------------------------
+- Visual inovador e com cores chamativas.
+    > Identidade visual marcante, em estilo moderno e de alto contraste.
+    > Paleta definida em variaveis globais (style.css):
+        --ink      #0D0D0D  (preto / texto principal)
+        --bg       #F7F5F0  (fundo off-white)
+        --lime     #c8f135  (verde-limao de destaque)
+        --mid      #4A4A4A  (cinza secundario)
+        --card-bg  #EDEAE3  (fundo dos cards)
+    > Verde-limao usado como cor de destaque (highlight) da marca.
+
+- Estrutura separada por componentes (inspirada em MVC).
+    > Cada parte da interface em seu proprio componente, com o CSS
+      correspondente:
+        - Navbar  -> barra de navegacao (logo + links).
+        - Home    -> entrada da pagina.
+        - Hero    -> secao de destaque com a proposta do produto.
+        - Sobre   -> historia e objetivo da GeoLize.
+        - Equipe  -> apresentacao dos integrantes.
+        - Footer  -> rodape com direitos autorais.
+    > Inspirado no padrao MVC (Model-View-Controller):
+        - View       -> componentes React e arquivos CSS (apresentacao).
+        - Controller -> logica de interacao e fluxo da aplicacao.
+        - Model      -> dados e regras de negocio (vagas, ocorrencias,
+                        dados da equipe).
+    > Objetivo: codigo organizado, de facil manutencao e reaproveitavel.
+
+------------------------------------------------------------------------
+3. TECNOLOGIA / PROCESSO DE TRABALHO
+------------------------------------------------------------------------
+- Git e GitHub.
+    > Versionamento do codigo com Git.
+    > Repositorio remoto hospedado no GitHub.
+    > Uso de branches (ex.: main e dev) para separar o trabalho.
+
+- Uso do Git para separar as tarefas.
+    > Divisao do trabalho entre os colaboradores.
+    > Cada tarefa/funcionalidade desenvolvida em sua propria branch.
+
+- Boas praticas de commit.
+    > Commits pequenos, frequentes e com proposito unico.
+    > Mensagens claras e descritivas sobre o que foi alterado.
+    > Uso de prefixos padronizados (feat:, style:, etc.).
+
+- Revisao de codigo (code review).
+    > Revisar o codigo dos demais colaboradores antes de integrar.
+    > Uso de Pull Requests para discussao e aprovacao das mudancas.
+    > Garantia de qualidade e padronizacao do codigo do time.
+
+------------------------------------------------------------------------
+4. EQUIPE
+------------------------------------------------------------------------
+- Hector de Santana Lima      -> Front-End & Back-End
+- Matheus Ferreira da Rocha   -> Back-End
+- Thiago Campanholi Chagas    -> Back-End & Documentacao
+- Victor Hugo Mendes Sforne   -> Back-End & Documentacao
+- Wellington Fernando Rocha   -> Back-End
+
+------------------------------------------------------------------------
+5. ESTRUTURA DE PASTAS
+------------------------------------------------------------------------
+Geolize/
+├── index.html            -> pagina principal e ponto de entrada
+├── style.css             -> variaveis globais e estilos base
+├── components/           -> componentes React (.jsx)
+│   ├── Navbar.jsx
+│   ├── Home.jsx
+│   ├── Hero.jsx
+│   ├── Sobre.jsx
+│   ├── Equipe.jsx
+│   └── Footer.jsx
+├── css/                  -> um CSS por componente
+│   ├── Navbar.css
+│   ├── Home.css
+│   ├── Hero.css
+│   ├── Sobre.css
+│   ├── Equipe.css
+│   └── Footer.css
+├── img/                  -> logos, fotos da equipe e ilustracoes
+├── REQUISITOS.txt        -> este documento
+└── README.md
+
+========================================================================
+                            FIM DO DOCUMENTO
+========================================================================
