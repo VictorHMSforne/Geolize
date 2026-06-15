@@ -2,10 +2,10 @@ function Sobre() {
   return (
     <section className="sobre" id="sobre">
       <div className="sobre-container">
-        <p className="sobre-numero">03</p>
+        <p className="sobre-numero reveal">03</p>
 
         <div className="sobre-conteudo">
-          <div className="sobre-texto-wrapper">
+          <div className="sobre-texto-wrapper reveal" style={{ transitionDelay: '0.1s' }}>
             <h2 className="sobre-titulo">
               Sobre a <span className="sobre-destaque">GeoLize</span>
             </h2>
@@ -29,9 +29,9 @@ function Sobre() {
             </div>
           </div>
 
-          <div className="sobre-imagem-wrapper">
+          <div className="sobre-imagem-wrapper reveal" style={{ transitionDelay: '0.2s' }}>
             <img
-              src="img/parking.png"  
+              src="img/parking.png"
               alt="Ilustração do sistema GeoLize"
               className="sobre-imagem"
             />
@@ -42,4 +42,3 @@ function Sobre() {
   );
 }
 
-export default Sobre;

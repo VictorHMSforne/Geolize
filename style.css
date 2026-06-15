@@ -1,4 +1,3 @@
-/* Pesquisando descobri que tem como usar variáveis globais*/
 :root {
   --ink:      #0D0D0D;
   --bg:       #F7F5F0;
@@ -9,11 +8,10 @@
   --mono:     'DM Mono', monospace;
 }
 
-/* Zera as diferenças de cada navegador */
 *, *::before, *::after { 
-    box-sizing: border-box; 
-    margin: 0; 
-    padding: 0; 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
 }
 
 body {
@@ -22,8 +20,19 @@ body {
   color: var(--ink);
 }
 
-
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .65s ease, transform .65s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
