@@ -9,20 +9,20 @@
     <link rel="icon" type="image/png" sizes="64x64" href="img/Logo.png" />
     <link rel="apple-touch-icon" href="img/Logo.png" />
 
-    <!-- REACT Fica aqui gurizada -->
+    <!-- REACT -->
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-    <!-- DaisyUI + Tailwind OUUU Bootstrap-->
+    <!-- Fontes -->
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap"
         rel="stylesheet" />
 
-    <!--CSS customizado, sempre dps do Daisy ou boots-->
+    <!-- CSS global -->
     <link rel="stylesheet" href="style.css" />
 
-    <!--CSS De cada página/componente-->
+    <!-- CSS dos componentes -->
     <link rel="stylesheet" href="css/Navbar.css" />
     <link rel="stylesheet" href="css/Home.css" />
     <link rel="stylesheet" href="css/Hero.css" />
@@ -30,10 +30,7 @@
     <link rel="stylesheet" href="css/Equipe.css" />
     <link rel="stylesheet" href="css/Footer.css" />
 
-
-
-    <!-- Aqui fica a parte dos componentes, tem que ser em ordem que vai aparecer:
-    Navbar, Home e assim por diante -->
+    <!-- Componentes JSX -->
     <script type="text/babel" src="components/Navbar.jsx"></script>
     <script type="text/babel" src="components/Home.jsx"></script>
     <script type="text/babel" src="components/Hero.jsx"></script>
@@ -54,7 +51,6 @@
                         <Sobre />
                         <Equipe />
                         <Footer />
-
                     </>
                 );
             }
@@ -62,6 +58,8 @@
             ReactDOM.createRoot(document.getElementById('root')).render(<App />);
         </script>
     </div>
+
+    <script src="animation.js"></script>
 </body>
 
 </html>
