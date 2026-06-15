@@ -32,11 +32,11 @@ Projeto de Atividade da Faculdade, voltado para a Disciplina de Front-End e Ment
 
     | Variável     | Cor       | Uso                       |
     | ------------ | --------- | ------------------------- |
-    | `--ink`      | `#0D0D0D` | Preto / texto principal   |
-    | `--bg`       | `#F7F5F0` | Fundo off-white           |
-    | `--lime`     | `#c8f135` | Verde-limão de destaque   |
-    | `--mid`      | `#4A4A4A` | Cinza secundário          |
-    | `--card-bg`  | `#EDEAE3` | Fundo dos cards           |
+    | `--ink`      | `#0D0D0D` $${\color{#0D0D0D}\blacksquare}$$ | Preto / texto principal   |
+    | `--bg`       | `#F7F5F0` $${\color{#F7F5F0}\blacksquare}$$ | Fundo off-white           |
+    | `--lime`     | `#c8f135` $${\color{#c8f135}\blacksquare}$$ | Verde-limão de destaque   |
+    | `--mid`      | `#4A4A4A` $${\color{#4A4A4A}\blacksquare}$$ | Cinza secundário          |
+    | `--card-bg`  | `#EDEAE3` $${\color{#EDEAE3}\blacksquare}$$ | Fundo dos cards           |
 
   - Verde-limão usado como cor de destaque (highlight) da marca.
 
@@ -124,3 +124,7 @@ python3 -m http.server 5500
 ```
 
 Depois abra **http://localhost:5500/** no navegador.
+
+Ou utilizando uma extensão do VS Code: **Live Server**
+No caso você deve instalá-la, clicar com o botão direito em *index.html*->*Open With Live Server*
+
