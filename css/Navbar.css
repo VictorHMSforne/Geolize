@@ -8,10 +8,28 @@
 }
 
 .navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0;               
   font-family: 'Bebas Neue', sans-serif;
   font-size: 1.6rem;
   letter-spacing: 0.12em;
-  color: var(--ink);
+}
+
+.navbar-logo {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+  display: block;
+  margin-right: 2px;    
+}
+
+.geo {
+  color: var(--mid, #4A4A4A);   
+}
+
+.lize {
+  color: var(--lime, #C8F135);  
 }
 
 .navbar-links {

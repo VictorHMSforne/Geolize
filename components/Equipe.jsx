@@ -2,27 +2,27 @@ function Equipe() {
   const membros = [
     {
       nome: 'Hector de Santana Lima',
-      papel: 'Desenvolvedor Front-End',
+      papel: 'Front-End & Back-End',
       foto: 'img/hector.jpg',
     },
     {
       nome: 'Matheus Ferreira da Rocha',
-      papel: 'Suporte',
+      papel: 'Back-End',
       foto: 'img/matheus.jpg',
     },
     {
       nome: 'Thiago Campanholi Chagas',
-      papel: 'Banco de Dados',
+      papel: 'Back-End & Documentação',
       foto: 'img/thiago.jpg',
     },
     {
       nome: 'Victor Hugo Mendes Sforne',
-      papel: 'Back-End',
+      papel: 'Back-End & Documentação',
       foto: 'img/victor.jpg',
     },
     {
       nome: 'Wellington Fernando Rocha',
-      papel: 'Documentação',
+      papel: 'Back-End',
       foto: 'img/wellington.jpg',
     },
   ];
@@ -32,7 +32,7 @@ function Equipe() {
       <div className="equipe-header">
         <span className="equipe-label">Conheça o time</span>
         <h2 className="equipe-titulo">
-          <span className="highlight">EQUIPE</span>
+          <span className="highlight">EQUIPE MAPLIZE</span>
         </h2>
       </div>
 
