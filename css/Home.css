@@ -126,3 +126,29 @@
         text-align: left;
     }
 }
+
+/* css Footer */
+
+
+.footer {
+    background-color: #b9a6a0;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-radius: 45px;
+}
+
+.footer h3 {
+    color: #ffffff;
+
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
