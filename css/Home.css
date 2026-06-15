@@ -96,3 +96,25 @@
         font-size: 0.95rem;
     }
 }
+
+@media (max-width: 380px) {
+  .hero-stat {
+    flex-shrink: 1;               
+    text-align: left;             
+  }
+
+  .hero-stat strong {
+    font-size: clamp(1.5rem, 8vw, 2.2rem);  
+  }
+}
+
+
+@media (max-width: 320px) {
+  .hero-stat strong {
+    font-size: 1.2rem;            
+  }
+
+  .hero-stat span {
+    font-size: 0.6rem;
+  }
+}
