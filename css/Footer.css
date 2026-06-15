@@ -1,18 +1,24 @@
 .footer {
-    background-color: var(--cor-navbar);
-    color: var(--cor-branco);
-    text-align: center;
-    padding: 40px 20px;
-    border-radius: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-top: 2px solid var(--ink);
+  background: var(--ink);
 }
 
 .footer h3 {
-    color: var(--cor-branco);
-    margin-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.12em;
+  color: var(--lime);
 }
 
 .footer p {
-    margin: 8px 0;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: #888;
+  letter-spacing: 0.06em;
 }
 
 /* Para Tablet*/

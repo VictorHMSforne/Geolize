@@ -1,31 +1,27 @@
 /* Pesquisando descobri que tem como usar variáveis globais*/
 :root {
-    --cor-fundo: #f5f0ee;
-    --cor-primaria: #4b8175;
-    --cor-navbar: #b9a6a0;
-    --cor-texto: #1f1f1f;
-    --cor-branco: #ffffff;
-    --cor-card: #d9d9d9;
-
-    --radius-pill: 9999px;
-    --radius-card: 10px;
-
-    --bp-mobile: 480px;
-    --bp-tablet: 768px;
+  --ink:      #0D0D0D;
+  --bg:       #F7F5F0;
+  --lime:     #C8F135;
+  --mid:      #4A4A4A;
+  --rule:     #0D0D0D;
+  --card-bg:  #EDEAE3;
+  --mono:     'DM Mono', monospace;
 }
 
 /* Zera as diferenças de cada navegador */
-*, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
 }
 
 body {
-    font-family: sans-serif;
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
 }
+
 
 img {
     max-width: 100%;

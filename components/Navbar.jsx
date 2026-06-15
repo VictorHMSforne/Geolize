@@ -1,7 +1,7 @@
-function Navbar(){
+function Navbar() {
     return (
         <nav className="navbar">
-            <div className="navbar-brand">Geolize</div>
+            <div className="navbar-brand">GEOLIZE</div>
             <ul className="navbar-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#solucao">Solução</a></li>

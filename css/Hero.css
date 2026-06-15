@@ -1,44 +1,85 @@
 .dor-solucao {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem 4rem;
+  max-width: 100%;
+  padding: 0;
+}
+
+.bloco {
+  padding: 3.5rem 2rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+.bloco-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  justify-content: flex-start;
+}
+
+.bloco-num {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--mid);
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
 }
 
 .bloco-titulo {
-    font-size: 2.75rem;
-    font-weight: 400;
-    color: var(--cor-texto);
-    margin: 0 0 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  line-height: 1;
 }
 
-.titulo-dor {
-    text-align: left;
+.bloco-dor .bloco-titulo { color: var(--ink); }
+.bloco-solucao .bloco-titulo {
+  background: var(--lime);
+  padding: 0 0.15em;
 }
 
-.titulo-solucao {
-    text-align: right;
-}
-
-.divisor {
-    border: none;
-    border-top: 4px solid var(--cor-texto);
-    margin: 2.5rem 0;
+.bloco-solucao .bloco-header {
+  justify-content: flex-end;   
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border: 2px solid var(--ink);
 }
 
 .card {
-    background-color: var(--cor-card);
-    border-radius: var(--radius-card);
-    padding: 1.25rem;
-    color: #333333;
-    line-height: 1.6;
-    min-height: 120px;
+  padding: 1.75rem;
+  border-right: 2px solid var(--ink);
+  background: var(--card-bg);
+  line-height: 1.65;
+  font-size: 0.92rem;
+  color: var(--ink);
 }
+
+.bloco-solucao .card { background: var(--bg); }
+
+.card:last-child { border-right: none; }
+
+.card-num {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--mid);
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 0.85rem;
+  color: var(--ink);
+}
+
+.bloco-solucao .card-icon { color: #1A6B3C; }
 
 /* Para Tablet*/
 @media (max-width: 768px) {

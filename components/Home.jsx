@@ -1,4 +1,4 @@
-function Home(){
+function Home() {
     return (
         <main>
             <HeroSection />
@@ -8,17 +8,20 @@ function Home(){
 
 
 
-function HeroSection(){
+function HeroSection() {
     return (
         <section className="hero" id="home">
-            <div className="hero-content">
-                <h1>GEOLIZE</h1>
-                <h2>Visibilidade total. Segurança em cada vaga.</h2>
-                <p>
-                    O Geolize integra sensores IoT e visão computacional para transformar a gestão de estacionamentos. 
-                    Em parceria com empresas de segurança, entregamos monitoramento em tempo real, 
-                    identificando vagas disponíveis e ocupadas com precisão — tudo em um painel centralizado, simples e eficiente.
-                </p>
+            <div className="hero-label">Monitoramento inteligente de estacionamentos</div>
+            <h1>GEO<br /><span className="highlight">LIZE</span></h1>
+            <div className="hero-bottom">
+                <h2>
+                    Visão computacional e IoT integrados para gestão de estacionamentos em tempo real.
+                    Cada vaga monitorada. Cada ocorrência registrada. Painel único.
+                </h2>
+                <div className="hero-stat">
+                    <strong>24/7</strong>
+                    <span>Monitoramento contínuo</span>
+                </div>
             </div>
         </section>
     );
