@@ -1,0 +1,29 @@
+/* Pesquisando descobri que tem como usar variáveis globais*/
+:root {
+  --ink:      #0D0D0D;
+  --bg:       #F7F5F0;
+  --lime:     #C8F135;
+  --mid:      #4A4A4A;
+  --rule:     #0D0D0D;
+  --card-bg:  #EDEAE3;
+  --mono:     'DM Mono', monospace;
+}
+
+/* Zera as diferenças de cada navegador */
+*, *::before, *::after { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}

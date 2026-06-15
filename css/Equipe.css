@@ -1,0 +1,177 @@
+.equipe {
+  padding: 4rem 2rem;
+  border-bottom: 2px solid var(--ink);
+  background: var(--bg);
+}
+
+.equipe-header {
+  margin-bottom: 3rem;
+}
+
+.equipe-label {
+  font-family: var(--mono, 'DM Mono', monospace);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--mid, #4A4A4A);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.equipe-label::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background: var(--mid, #4A4A4A);
+}
+
+.equipe-titulo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3.5rem, 10vw, 6rem);
+  line-height: 0.92;
+  letter-spacing: 0.02em;
+  color: var(--ink, #0D0D0D);
+}
+
+.equipe-titulo .highlight {
+  display: inline-block;
+  background: var(--lime, #C8F135);
+  padding: 0 0.15em;
+  line-height: 1;
+}
+
+.equipe-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);  
+  gap: 0;
+  border: 2px solid var(--ink, #0D0D0D);
+}
+
+.membro-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem 1.75rem;
+  background: var(--card-bg, #EDEAE3);
+  border-right: 2px solid var(--ink, #0D0D0D);
+  transition: background 0.2s;
+}
+
+.membro-card:hover {
+  background: var(--bg, #F7F5F0);
+}
+
+.membro-card:last-child {
+  border-right: none;
+}
+
+.membro-foto-wrapper {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--ink, #0D0D0D);
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.membro-foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.membro-nome {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+  color: var(--ink, #0D0D0D);
+  line-height: 1.1;
+  margin-bottom: 0.3rem;
+}
+
+.membro-papel {
+  font-family: var(--mono, 'DM Mono', monospace);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--mid, #4A4A4A);
+}
+
+/* Tablet usa 3 colunas */
+@media (max-width: 1024px) {
+  .equipe-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .membro-card {
+    border-right: 2px solid var(--ink);
+  }
+
+  /* 3ª coluna sem borda direita */
+  .membro-card:nth-child(3n) {
+    border-right: none;
+  }
+
+  /* Últimos 2 cards (4º e 5º) sem borda inferior */
+  .membro-card:nth-child(4),
+  .membro-card:nth-child(5) {
+    border-top: 2px solid var(--ink);
+  }
+}
+
+/* Mobile grande usa 2 colunas */
+@media (max-width: 768px) {
+  .equipe-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .membro-card {
+    border-right: 2px solid var(--ink);
+    border-top: 2px solid var(--ink);
+  }
+
+  /* 2ª coluna sem borda direita */
+  .membro-card:nth-child(2n) {
+    border-right: none;
+  }
+
+  /* 1º e 2º card sem borda top */
+  .membro-card:nth-child(1) {
+    border-top: none;
+  }
+}
+
+/* Mobile pequeno usa 1 coluna */
+@media (max-width: 480px) {
+  .equipe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .membro-card {
+    border-right: none;
+    border-top: 2px solid var(--ink);
+  }
+
+  .membro-card:first-child {
+    border-top: none;
+  }
+
+  .membro-foto-wrapper {
+    width: 90px;
+    height: 90px;
+  }
+
+  .equipe {
+    padding: 3rem 1rem;
+  }
+
+  .membro-card {
+    padding: 1.5rem 1rem;
+  }
+}
