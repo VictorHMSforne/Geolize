@@ -126,5 +126,5 @@ python3 -m http.server 5500
 Depois abra **http://localhost:5500/** no navegador.
 
 Ou utilizando uma extensão do VS Code: **Live Server**
-No caso você deve instalá-la, clicar com o botão direito em *index.html*->*Open With Live Server*
+No caso você deve instalá-la, clicar com o botão direito em *index.html*->*Open With Live Server*.
 
