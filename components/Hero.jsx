@@ -6,10 +6,6 @@ function Hero() {
     );
 }
 
-function Card({ children }) {
-    return <div className="card">{children}</div>;
-}
-
 function DorSolucaoSection() {
 
     const dores = [
