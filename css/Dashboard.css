@@ -1,0 +1,296 @@
+.dash {
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 1.5rem;
+}
+
+/* ===== Topo ===== */
+.dash-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--ink);
+  background: var(--ink);
+  padding: 0.9rem 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.dash-brand {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.12em;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dash-brand .geo { color: #fff; }
+.dash-brand .lize { color: var(--lime); margin-left: -0.6rem; }
+
+.dash-tag {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  color: #888;
+  border-left: 1px solid #555;
+  padding-left: 0.75rem;
+}
+
+.dash-topo-dir {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.dash-live {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--lime);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dash-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--lime);
+  animation: pulse 1.4s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.25; }
+}
+
+.dash-sair {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--lime);
+  border: 2px solid var(--lime);
+  padding: 0.35rem 0.9rem;
+  text-decoration: none;
+}
+
+.dash-sair:hover { background: #fff; border-color: #fff; }
+
+/* ===== Estatisticas ===== */
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.stat-card {
+  border: 2px solid var(--ink);
+  background: var(--card-bg);
+  padding: 1.1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.stat-card--destaque {
+  background: var(--lime);
+}
+
+.stat-valor {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.4rem;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.stat-label {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+/* ===== Corpo ===== */
+.dash-corpo {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.dash-mapa,
+.dash-ocorrencias {
+  border: 2px solid var(--ink);
+  background: var(--card-bg);
+  padding: 1.25rem;
+}
+
+.dash-secao-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.dash-secao-head h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+
+.dash-select {
+  border: 2px solid var(--ink);
+  background: var(--bg);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  padding: 0.45rem 0.7rem;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.dash-endereco {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  color: var(--mid);
+  margin-bottom: 0.75rem;
+}
+
+.dash-resumo-local {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--mid);
+  margin-bottom: 1.1rem;
+}
+
+.dash-resumo-local strong {
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+/* ===== Grid de vagas ===== */
+.vagas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(46px, 1fr));
+  gap: 0.5rem;
+}
+
+.vaga {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+.vaga--livre   { background: var(--lime); color: var(--ink); }
+.vaga--ocupada { background: #d9d4c9; color: #777; }
+.vaga--alerta  { background: #e5484d; color: #fff; }
+
+.vagas-legenda {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--mid);
+}
+
+.vagas-legenda span { display: flex; align-items: center; gap: 0.4rem; }
+
+.leg {
+  width: 14px;
+  height: 14px;
+  border: 2px solid var(--ink);
+  display: inline-block;
+}
+
+.leg--livre   { background: var(--lime); }
+.leg--ocupada { background: #d9d4c9; }
+.leg--alerta  { background: #e5484d; }
+
+/* ===== Ocorrencias ===== */
+.dash-badge {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--ink);
+  color: var(--lime);
+  padding: 0.25rem 0.6rem;
+}
+
+.ocorrencia-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.ocorrencia {
+  border: 2px solid var(--ink);
+  background: var(--bg);
+  padding: 0.7rem 0.9rem;
+  border-left-width: 6px;
+}
+
+.ocorrencia--alto  { border-left-color: #e5484d; }
+.ocorrencia--medio { border-left-color: #f5a623; }
+.ocorrencia--baixo { border-left-color: var(--mid); }
+
+.ocorrencia-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.ocorrencia-tipo {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.ocorrencia-hora {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--mid);
+}
+
+.ocorrencia-local {
+  font-size: 0.78rem;
+  color: var(--mid);
+}
+
+.dash-nota {
+  margin-top: 1rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  line-height: 1.5;
+  color: var(--mid);
+  border-top: 1px solid #cfc9bd;
+  padding-top: 0.75rem;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 1000px) {
+  .dash-stats { grid-template-columns: repeat(3, 1fr); }
+  .dash-corpo { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .dash-stats { grid-template-columns: repeat(2, 1fr); }
+  .dash-topo { justify-content: center; text-align: center; }
+}

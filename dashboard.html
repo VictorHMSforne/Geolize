@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geolize | Painel de Operação</title>
+    <link rel="icon" type="image/png" sizes="82x82" href="img/Logo.png" />
+    <link rel="apple-touch-icon" href="img/Logo.png" />
+
+    <!-- REACT Fica aqui gurizada (mesmas versoes do index.html) -->
+    <script src="https://unpkg.com/@babel/standalone@7.21.4/babel.min.js"></script>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap"
+        rel="stylesheet" />
+
+    <!--CSS customizado-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--CSS do painel-->
+    <link rel="stylesheet" href="css/Dashboard.css" />
+
+    <!--Componente do painel-->
+    <script type="text/babel" src="components/Dashboard.jsx"></script>
+</head>
+
+<body>
+    <div id="root">
+        <script type="text/babel">
+            function App() {
+                return (
+                    <>
+                        <Dashboard />
+                    </>
+                );
+            }
+
+            ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+        </script>
+    </div>
+</body>
+
+</html>
